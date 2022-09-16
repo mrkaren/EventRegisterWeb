@@ -27,8 +27,7 @@ public class AddUserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        List<Event> all = eventManager.getAll();
-//        request.setAttribute("events", all);
+
         request.getRequestDispatcher("/WEB-INF/addUser.jsp").forward(request, response);
     }
 

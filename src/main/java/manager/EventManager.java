@@ -3,8 +3,6 @@ package manager;
 import db.DBConnectionProvider;
 import model.Event;
 import model.EventType;
-import model.User;
-import model.UserRole;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

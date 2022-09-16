@@ -21,18 +21,18 @@ Please update User's data:
     <input type="text" name="name" value="<%=user.getName()%>"/> <br>
     <input type="text" name="surname" value="<%=user.getSurname()%>"/> <br>
     <input type="email" name="email" value="<%=user.getEmail() %>"/> <br>
-    <select name="eventId">
-        <% for (Event event : events) {
-            if (event.equals(user.getEvent())) {
-        %>
-        <option selected value="<%=event.getId()%>"><%=event.getName()%> <%=event.getPlace()%> (<%=event.getPrice()%>)
-        </option>
-        <% } else { %>
-        <option value="<%=event.getId()%>"><%=event.getName()%> <%=event.getPlace()%> (<%=event.getPrice()%>)</option>
+<%--    <select name="eventId">--%>
+<%--        <% for (Event event : events) {--%>
+<%--            if (event.equals(user.getEvent())) {--%>
+<%--        %>--%>
+<%--        <option selected value="<%=event.getId()%>"><%=event.getName()%> <%=event.getPlace()%> (<%=event.getPrice()%>)--%>
+<%--        </option>--%>
+<%--        <% } else { %>--%>
+<%--        <option value="<%=event.getId()%>"><%=event.getName()%> <%=event.getPlace()%> (<%=event.getPrice()%>)</option>--%>
 
-        <% }
-        } %>
-    </select>
+<%--        <% }--%>
+<%--        } %>--%>
+<%--    </select>--%>
 
     <input type="submit" value="Update">
 </form>
